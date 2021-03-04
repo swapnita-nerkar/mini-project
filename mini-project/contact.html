@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <title>Food Website</title>
+</head>
+<style type="text/css">
+
+	nav{
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    }
+    a{
+        color: #000;
+        display: inline-block;
+        line-height: 4em;
+        padding: 0.5em 2em;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Raleway;
+    }
+
+    a:link {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: gold;
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
+.active{
+  background-color: gold;
+  color: white;
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #FFF2A7;
+  padding: 20px 450px 100px 450px;
+}
+    </style>
+<body>
+    <center>
+    <header>
+        <nav style="text-align: center;border-bottom: black">
+            <ul style="list-style-type: none;margin: 0;padding: 0;background-color:#fff;">
+                <li style="display: inline-block;"><a href="index.html">Home</a></li>
+                <li style="display: inline;"><a href="about.html">About</a></li>
+                <li style="display: inline;"><a href="dishesh.html">Special Dish</a></li>
+                <li style="display: inline-block;" class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Contact Form</h2>
+
+    </center>
+    <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="select">Select</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </body>
+</html>
